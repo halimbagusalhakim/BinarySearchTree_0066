@@ -56,8 +56,9 @@ public:
         parent = NULL;
         while ((currentNode != NULL)&& (currentNode->info != element)) {
             parent = currentNode;
-           
-             
+            if (element < currentNode->info)
+                currentNode = currentNode->leftchild;
+                 
         }
     }
 };
