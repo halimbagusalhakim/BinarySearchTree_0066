@@ -50,6 +50,9 @@ Public:
     }
 
     void search(string element, Node*& parent, Node*& currentNode) {
+        //this function searches the currentNode of the specified Node as waell as the current Node of its parent
+        currentNode = ROOT;
+        parent = NULL;
         
     }
 };
