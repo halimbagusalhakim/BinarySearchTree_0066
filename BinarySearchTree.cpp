@@ -90,6 +90,10 @@ public:
     }
 
     void postorder(Node* ptr){
+        //perform the postorder traversal of the tree
+        if (ROOT == NULL) {
+            cout << "Tree is empty" << endl;
+        }
         
     }
 };
