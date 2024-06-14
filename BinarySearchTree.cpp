@@ -3,6 +3,7 @@
 using namespace std;
 
 class Node {
+public:
     string info;
     Node* leftchild;
     Node* rightchild;
@@ -17,7 +18,7 @@ class Node {
 };
 
 class BinaryTree {
-Public:
+public:
     Node* ROOT;
 
     BinaryTree() {
@@ -27,11 +28,11 @@ Public:
     {
         Node* newNode = new Node(element, NULL, NULL);
         newNode->info = element; // assign value to the data field of the new node
-        newNode->leftchild = NULL // make the left child of the nw node point to NULL
-        newNode->rightchild = NULL // make the right child of the nw node point to null
+        newNode->leftchild = NULL; // make the left child of the nw node point to NULL
+        newNode->rightchild = NULL; // make the right child of the nw node point to null
 
         Node* parent = NULL;
-        Node* current Node = NULL;
+        Node* currentNode = NULL;
         search(element, parent, currentNode);//locate the node which will be the parent of the node to be inserted
 
         if(parent == NULL)//if the parent is NULL(TREE is empty) 
@@ -53,6 +54,10 @@ Public:
         //this function searches the currentNode of the specified Node as waell as the current Node of its parent
         currentNode = ROOT;
         parent = NULL;
-        
+        while ((currentNode != NULL)&& (currentNode->info != element)) {
+            parent = currentNode;
+           
+             
+        }
     }
 };
